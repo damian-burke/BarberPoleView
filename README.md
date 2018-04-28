@@ -40,7 +40,7 @@ The default values are:
 - Animation speed: 100ms
 - Line width: 4dp
 - Animated: true
-- Colors:
+- Colors: red / white / blue / white
 
 ## Download
 

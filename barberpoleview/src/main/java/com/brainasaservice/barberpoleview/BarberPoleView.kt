@@ -87,7 +87,7 @@ class BarberPoleView @JvmOverloads constructor(
                     }
                 }
             } else {
-                colors = arrayOf(Color.RED, Color.WHITE).map {
+                colors = arrayOf(Color.RED, Color.WHITE, Color.BLUE, Color.WHITE).map {
                     Paint().apply {
                         color = it
                         strokeWidth = lineWidth.toFloat()
