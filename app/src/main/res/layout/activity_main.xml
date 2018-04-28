@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    tools:context=".MainActivity">
+
+
+    <com.brainasaservice.barberpoleview.BarberPoleView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="164dp"
+        app:animated="true"
+        app:animation_speed="200"
+        app:line_rotation="45"
+        app:line_width="2dp" />
+
+</FrameLayout>
