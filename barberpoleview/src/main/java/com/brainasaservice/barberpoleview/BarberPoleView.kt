@@ -30,7 +30,7 @@ class BarberPoleView @JvmOverloads constructor(
             }
         }
 
-    var animationSpeed: Long = 400L
+    var animationDuration: Long = 400L
 
     private var lineRotationRad: Double = Math.toRadians(lineRotation.toDouble())
         set(value) {
@@ -111,9 +111,9 @@ class BarberPoleView @JvmOverloads constructor(
                     true
             )
 
-            animationSpeed = typedArray.getInteger(
-                    R.styleable.BarberPoleView_animation_speed,
-                    context.resources.getInteger(R.integer.default_animation_speed)
+            animationDuration = typedArray.getInteger(
+                    R.styleable.BarberPoleView_animation_duration,
+                    context.resources.getInteger(R.integer.default_animation_duration)
             ).toLong()
 
             typedArray.recycle()
@@ -132,7 +132,7 @@ class BarberPoleView @JvmOverloads constructor(
 
             animated = true
 
-            animationSpeed = context.resources.getInteger(R.integer.default_animation_speed).toLong()
+            animationDuration = context.resources.getInteger(R.integer.default_animation_duration).toLong()
         }
 
         if (animated) {
@@ -144,7 +144,7 @@ class BarberPoleView @JvmOverloads constructor(
     }
 
     private fun createAnimator() = ValueAnimator.ofFloat(0.0f, lineWidth.toFloat() * colors.size).apply {
-        duration = colors.size * animationSpeed
+        duration = animationDuration
         repeatMode = ValueAnimator.RESTART
         interpolator = LinearInterpolator()
         repeatCount = ValueAnimator.INFINITE

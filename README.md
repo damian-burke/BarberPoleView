@@ -20,7 +20,7 @@ Including the view in a XML layout file:
         app:line_width="4dp"
         app:animated="true"
         app:colors="@array/barbercolor"
-        app:animation_speed="100" />
+        app:animation_duration="100" />
 
 Example for a customized color array:
 
@@ -31,16 +31,19 @@ Example for a customized color array:
     </integer-array>
 
 The `animation_speed` attribute defines the speed multiplier. Since
-there this is an "infinite" animation, the `animation_speed` will
+there this is an "infinite" animation, the `animation_duration` will
 be multiplied with the amount of colors in the `colors` array to
 ensure that the animation runs flawless.
 
 The default values are:
 - Line rotation: 45 (degrees)
-- Animation speed: 100ms
+- Animation duration: 100ms
 - Line width: 4dp
 - Animated: true
 - Colors: red / white / blue / white
+
+![Example Screenshot](art/sample_screenshot.png?s=300 "Example Screenshot")
+
 
 ## Download
 

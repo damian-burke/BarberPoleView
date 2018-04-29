@@ -1,21 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
     android:clipChildren="false"
     android:clipToPadding="false"
     tools:context=".MainActivity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="Height: 4dp / Rotation: 45° / Line Width: 2dp" />
 
     <com.brainasaservice.barberpoleview.BarberPoleView
         android:layout_width="match_parent"
         android:layout_height="4dp"
-        android:layout_marginTop="164dp"
+        android:layout_marginTop="8dp"
         app:animated="true"
-        app:animation_speed="200"
+        app:animation_duration="800"
         app:line_rotation="45"
         app:line_width="2dp" />
 
-</FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="Height: 4dp / Rotation: 15° / Line Width: 4dp" />
+
+    <com.brainasaservice.barberpoleview.BarberPoleView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="8dp"
+        app:animated="true"
+        app:animation_duration="800"
+        app:line_rotation="15"
+        app:line_width="4dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="Height: 16dp / Rotation: 15° / Line Width: 4dp" />
+
+    <com.brainasaservice.barberpoleview.BarberPoleView
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"
+        app:animated="true"
+        app:animation_duration="800"
+        app:line_rotation="15"
+        app:line_width="4dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="Height: 4dp / Rotation: 90° / Line Width: 2dp" />
+
+    <com.brainasaservice.barberpoleview.BarberPoleView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="8dp"
+        app:animated="true"
+        app:animation_duration="800"
+        app:line_rotation="90"
+        app:line_width="2dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="Height: 8dp / Rotation: 175° / Line Width: 2dp" />
+
+    <com.brainasaservice.barberpoleview.BarberPoleView
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="8dp"
+        app:animated="true"
+        app:animation_duration="800"
+        app:line_rotation="175"
+        app:line_width="2dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="Height: 4dp / Rotation: 45° / Line Width: 1dp" />
+
+    <com.brainasaservice.barberpoleview.BarberPoleView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="8dp"
+        app:animated="true"
+        app:animation_duration="800"
+        app:line_rotation="45"
+        app:line_width="1dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="Height: 4dp / Rotation: 45° / Line Width: 4dp" />
+
+    <com.brainasaservice.barberpoleview.BarberPoleView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="16dp"
+        app:animated="true"
+        app:animation_duration="800"
+        app:line_rotation="45"
+        app:line_width="4dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="Height: 4dp / Rotation: 45° / Line Width: 4dp / Custom Color Array" />
+
+    <com.brainasaservice.barberpoleview.BarberPoleView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="8dp"
+        app:animated="true"
+        app:animation_duration="800"
+        app:colors="@array/barbercolor"
+        app:line_rotation="45"
+        app:line_width="4dp" />
+
+
+</LinearLayout>
