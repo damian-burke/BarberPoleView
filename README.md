@@ -42,8 +42,7 @@ The default values are:
 - Animated: true
 - Colors: red / white / blue / white
 
-![Example Screenshot](art/sample_screenshot.png?s=300 "Example Screenshot")
-
+![Example Screenshot](art/sample_screenshot.png "Example Screenshot")
 
 ## Download
 
