@@ -46,7 +46,17 @@ The default values are:
 
 ## Download
 
-Coming soon to a maven repository close to you.
+Repository:
+
+    repositories {
+        maven {
+            url  "https://dl.bintray.com/damian-burke/maven"
+        }
+    }
+
+Gradle dependency:
+
+    implementation 'com.brainasaservice:barberpoleview:1.0.0'
 
 ## License
 
